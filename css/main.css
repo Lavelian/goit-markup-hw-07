@@ -69,12 +69,27 @@ img {
   overflow: hidden;
 }
 
-:active,
+/* :active,
 :hover,
 :focus {
   outline: 0;
   outline-offset: 0;
+} */
+
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+/* Header */
 
 .header {
   padding-top: 25px;
@@ -82,12 +97,12 @@ img {
   border-bottom: 1px solid #ececec;
 }
 
-.content-header {
+.container-header {
   display: flex;
   align-items: center;
 }
 
-.header-link {
+.logo {
   color: #000000;
   font-family: 'Raleway', sans-serif;
 
@@ -98,22 +113,26 @@ img {
   margin-right: 93px;
 }
 
-.logo {
+.logo__icon {
   color: var(--acent-color-text);
 }
 
+/* main-nav */
 
-.main-nav {
+.main-nav__list {
   display: flex;
 
 }
 
-.main-nav .main-nav-link:hover,
-.main-nav .main-nav-link:focus {
-  color: var(--acent-color-text);
+.main-nav__item {
+  margin-right: 50px;
 }
 
-.main-nav-link {
+.main-nav__item:last-child {
+  margin-right: 0;
+}
+
+.main-nav__link{
   position: relative;
   font-weight: 500;
   font-size: 14px;
@@ -124,12 +143,17 @@ img {
 
 }
 
+.main-nav__list .main-nav__link:hover,
+.main-nav__list .main-nav__link:focus {
+  color: var(--acent-color-text);
+}
 
-.current {
+
+.main-nav__link--current{
   color: var(--acent-color-text)
 }
 
-.current::after {
+.main-nav__link--current::after {
   position: absolute;
   left: 0;
   bottom: -34px;
@@ -144,20 +168,22 @@ img {
 
 }
 
-.nav-item {
-  margin-right: 50px;
-}
-
-.nav-item:last-child {
-  margin-right: 0;
-}
+/* aught-nav */
 
 .aught-nav {
   display: flex;
   margin-left: auto;
 }
 
-.aught-nav-link {
+.aught-nav__item {
+  margin-right: 50px;
+}
+
+.aught-nav__item:last-child {
+  margin-right: 0px;
+}
+
+.aught-nav__link {
   display: flex;
   font-weight: 500;
   font-size: 14px;
@@ -167,44 +193,24 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav-icon {
+.aught-nav__icon {
   margin-right: 10px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 
-.aught-nav-item {
-  margin-right: 50px;
-}
-
-.aught-nav-item:last-child {
-  margin-right: 0px;
-}
-
-.aught-nav .aught-nav-link:hover,
-.aught-nav .aught-nav-link:focus {
+.aught-nav .aught-nav__link:hover,
+.aught-nav .aught-nav__link:focus {
   color: var(--acent-color-text);
 }
 
-.aught-nav-link:hover .nav-icon,
-.aught-nav-link:focus .nav-icon {
+.aught-nav__link:hover .aught-nav__icon,
+.aught-nav__link:focus .aught-nav__icon {
   fill: var(--acent-color-text);
 }
 
-.container {
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
+/* Main*/
 
-/* РіРµСЂРѕР№*/
-
-/* .hero-section {
-  padding-top: 200px;
-  padding-bottom: 200px;
-} */
-.container-hero {
+.hero__container {
   max-width: 1600px;
   height: 600px;
   text-align: center;
@@ -220,22 +226,21 @@ img {
   padding-bottom: 200px;
 }
 
-.hero-title {
+.hero__title {
+  width: 696px;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-
-  /* or 136% */
 
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--color-hero);
 
   margin: 0 auto 30px;
-  width: 696px;
 }
 
-.hero-btn {
+.main__btn {
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -247,6 +252,7 @@ img {
   color: var(--color-hero);
   background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  
   border-radius: 4px;
   min-width: 200px;
   padding: 10px 32px;
@@ -254,30 +260,25 @@ img {
   cursor: pointer;
 }
 
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
-/* С†РµРЅРѕСЃС‚Рё */
-.values.section {
+/* values */
+.values-section {
   padding-bottom: 0;
 }
 
-.values-lists {
+.values__lists {
   display: flex;
 }
 
-.values-list {
+.values__list {
   margin-right: 30px;
   width: 270px;
 }
 
-.values-list:last-child {
+.values__list:last-child {
   margin-right: 0;
 }
 
-.values-list>h3 {
+.values__title {
   color: var(--secondary-color-text);
   font-weight: 700;
   font-size: 14px;
@@ -286,13 +287,13 @@ img {
   margin-bottom: 10px;
 }
 
-.values-list>p {
+.values__text {
   font-size: 14px;
   line-height: 1.71;
 }
 
 /* value icons ///////////////////////////////xxxxxxx//*/
-.box-icon {
+.values__box {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -304,7 +305,7 @@ img {
   margin-bottom: 30px;
 }
 
-.value-icon {
+.values__icon {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -313,7 +314,7 @@ img {
   height: 70px;
 }
 
-/* Р С• Р Р…Р В°РЎРѓ  */
+/* about */
 .about h2 {
   font-weight: 700;
   font-size: 36px;

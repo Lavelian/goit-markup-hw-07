@@ -22,36 +22,37 @@
   </head>
   <body>
     <header class="header">
-      <div class="container content-header">
-        <a href="/index.html" lang="en" class="header-link link">
-          <span class="logo">Web</span>Studio
+      <div class="container container-header">
+        <a href="/index.html" lang="en" class="link logo">
+          <span class="logo__icon">Web</span>Studio
         </a>
-        <nav class="nav">
-          <ul class="main-nav list">
-            <li class="nav-item">
-              <a href="index.html" class="main-nav-link current link">Студия</a>
+        <nav class="main-nav">
+          <ul class="list main-nav__list">
+            <li class="main-nav__item">
+              <a href="index.html" class="link main-nav__link main-nav__link--current">Студия</a>
             </li>
-            <li class="nav-item">
-              <a href="./portfolio.html" class="main-nav-link link"> Портфолио</a>
+
+            <li class="main-nav__item">
+              <a href="./portfolio.html" class="link main-nav__link"> Портфолио</a>
             </li>
-            <li class="nav-item">
-              <a href="" class="main-nav-link link">Контакты</a>
+            <li class="main-nav__item">
+              <a href="" class="link main-nav__link">Контакты</a>
             </li>
           </ul>
         </nav>
-        <ul class="aught-nav list">
-          <li class="aught-nav-item">
-            <a href="mailto:info@devstudio.com" class="aught-nav-link link">
-              <svg class="nav-icon" width="16" height="12">
+        <ul class="list aught-nav">
+          <li class="aught-nav__item">
+            <a href="mailto:info@devstudio.com" class="link aught-nav__link">
+              <svg class="aught-nav__icon" width="16" height="12">
                 <use href="./Images/icons.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com
             </a>
           </li>
 
-          <li class="aught-nav-item">
-            <a href="tel:+380961111111" class="aught-nav-link link">
-              <svg class="nav-icon" width="12" height="16">
+          <li class="aught-nav__item">
+            <a href="tel:+380961111111" class="link aught-nav__link aught-nav-link link">
+              <svg class="aught-nav__icon" width="12" height="16">
                 <use href="./Images/icons.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11</a
@@ -63,62 +64,67 @@
     <main>
       <!-- герой -->
       <section class="hero hero-section">
-        <div class="container-hero">
-          <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-          <button data-modal-open type="button" class="hero-btn">Заказать услугу</button>
+        <div class="hero__container">
+          <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
+          <button data-modal-open type="button" class="main__btn">Заказать услугу</button>
         </div>
       </section>
       <!-- наши цености -->
-      <section class="values section">
+      <section class="section values-section">
         <div class="container">
           <h2 class="visually-hidden">Наши цености</h2>
-          <ul class="values-lists list">
-            <li class="values-list">
+          <ul class="list values__lists">
+            <li class="values__list">
               <div class="box-icon">
                 <svg class="value-icon" width="70" height="70">
                   <use href="./Images/icons.svg#icon-antenna"></use>
                 </svg>
               </div>
-              <h3>Внимание к деталям</h3>
-              <p>
+              <h3 class="values__title">Внимание к деталям</h3>
+              <p class="values__text">
                 Идейные соображения, а также начало повседневной работы по формированию позиции.
               </p>
             </li>
-            <li class="values-list">
+            <li class="values__list">
               <div class="box-icon">
-                <svg class="value-icon" width="70" height="70">
+                <svg class="values-icon" width="70" height="70">
                   <use href="./Images/icons.svg#icon-clock"></use>
                 </svg>
               </div>
-              <h3>Пунктуальность</h3>
-              <p>
+              <h3 class="values__title">Пунктуальность</h3>
+              <p class="values__text">
                 Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
               </p>
             </li>
-            <li class="values-list">
+
+            <li class="values__list">
               <div class="box-icon">
-                <svg class="value-icon" width="70" height="70">
+                <svg class="values-icon" width="70" height="70">
                   <use href="./Images/icons.svg#icon-diagram"></use>
                 </svg>
               </div>
-              <h3>Планирование</h3>
-              <p>
+              <h3 class="values__title">Планирование</h3>
+              <p class="values__text">
                 Равным образом консультация с широким активом в значительной степени обуславливает.
               </p>
             </li>
-            <li class="values-list">
-              <div class="box-icon">
-                <svg class="value-icon" width="70" height="70">
+
+            <li class="values__list">
+              <div class="values__box">
+                <svg class="values__icon" width="70" height="70">
                   <use href="./Images/icons.svg#icon-astronaut"></use>
                 </svg>
               </div>
-              <h3>Современные технологии</h3>
-              <p>Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+              <h3 class="values__title">Современные технологии</h3>
+              <p class="values__text">
+                Значимость этих проблем настолько очевидна, что реализация плановых заданий.
+              </p>
             </li>
           </ul>
         </div>
       </section>
-      <!-- о нас -->
+
+      <!-- about -->
       <section class="about section">
         <div class="container">
           <h2>Чем мы занимаемся</h2>
