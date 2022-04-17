@@ -424,7 +424,7 @@
           <b class="form-footer__title">Подпишитесь на рассылку</b>
 
           <input class="form-footer__input" type="email" placeholder="Email" />
-          <button class="main-btn main-btn--footer" type="submit">
+          <button class="main-btn main-btn__footer" type="submit">
             Подписаться
             <svg class="form-footer__icon" width="24" height="24">
               <use href="./Images/icons.svg#icon-fly"></use>
@@ -433,6 +433,7 @@
         </form>
       </div>
     </footer>
+
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button data-modal-close type="button" class="modal-close-button">
@@ -441,70 +442,70 @@
           </svg>
         </button>
 
-        <form class="modal-form" name="modal-form " autocomplete="on">
+        <form class="form modal-form" name="modal-form " autocomplete="on">
           <ul class="list">
-            <li class="form-field">
-              <b class="form-title form-field">Оставьте свои данные, мы вам перезвоним</b>
+            <li class="modal-form__field">
+              <b class="modal-form__title">Оставьте свои данные, мы вам перезвоним</b>
             </li>
 
-            <li class="form-field">
-              <label class="form-label" for="user_name">Имя</label>
-              <div class="input-box">
-                <input class="form-input" type="text" name="Name" id="user_name" />
-                <svg class="modal-icon" width="18" height="18">
+            <li class="modal-form__ield">
+              <label class="modal-form__label" for="user_name">Имя</label>
+              <div class="modal-form__box">
+                <input class="modal-form__input" type="text" name="Name" id="user_name" />
+                <svg class="modal-form__icon" width="18" height="18">
                   <use href="./Images/icons.svg#icon-person"></use>
                 </svg>
               </div>
             </li>
 
-            <li class="form-field">
-              <label class="form-label" for="user_tel">Телефон</label>
-              <div class="input-box">
-                <input class="form-input" type="tel" name="tel" id="user_tel" />
-                <svg class="modal-icon" width="18" height="18">
+            <li class="modal-form__field">
+              <label class="modal-form__label" for="user_tel">Телефон</label>
+              <div class="modal-form__box">
+                <input class="modal-form__input" type="tel" name="tel" id="user_tel" />
+                <svg class="modal-form__icon" width="18" height="18">
                   <use href="./Images/icons.svg#icon-phone"></use>
                 </svg>
               </div>
             </li>
 
-            <li class="form-field">
-              <label class="form-label" for="user_email">Почта</label>
-              <div class="input-box">
-                <input class="form-input" type="email" name="email" id="user_email" />
-                <svg class="modal-icon" width="18" height="18">
+            <li class="modal-form__field">
+              <label class="modal-form__label" for="user_email">Почта</label>
+              <div class="modal-form__box">
+                <input class="modal-form__input" type="email" name="email" id="user_email" />
+                <svg class="modal-form__icon" width="18" height="18">
                   <use href="./Images/icons.svg#icon-email"></use>
                 </svg>
               </div>
             </li>
 
-            <li class="form-textarea">
-              <label class="form-label" for="user_coment">Коментарий</label>
+            <li class="modal-form__field modal-form__textarea">
+              <label class="modal-form__label" for="user_coment">Коментарий</label>
 
               <textarea
-                class="input-textarea"
+                class="modal-form__textarea-input"
                 name="coment"
                 id="user_coment"
                 placeholder="Введите текст"
               ></textarea>
             </li>
 
-            <li class="form-check">
-              <label class="label-condition" for="condition">
+            <li class="modal-form__field">
+              <label class="modal-form__label-condition" for="condition">
                 <input
-                  class="check-condition"
+                  class="modal-form__check-input check-condition"
                   type="checkbox"
                   name="condition"
                   value="condition"
                   id="condition"
                 />
-                <span class="checkbox-icon"></span>
+                <span class="modal-form__check-icon checkbox-icon"></span>
 
                 Соглашаюсь с рассылкой и принимаю&nbsp;<a href="">Условия договора</a>
               </label>
             </li>
           </ul>
 
-          <button class="submit-btn" type="submit">Отправить</button>
+          <button class="main-btn modal-form__main-btn" type="submit">Отправить</button>
         </form>
       </div>
     </div>
