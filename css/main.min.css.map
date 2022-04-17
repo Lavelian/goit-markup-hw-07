@@ -24,8 +24,8 @@
         "../sass/components/_portfolio.scss",
         "../sass/components/_works.scss",
         "../sass/components/_product.scss",
-        "../sass/components/overlay.scss",
-        "../sass/components/item-content.scss"
+        "../sass/components/_overlay.scss",
+        "../sass/components/_item-content.scss"
     ],
     "names": [],
     "file": "main.min.css"
